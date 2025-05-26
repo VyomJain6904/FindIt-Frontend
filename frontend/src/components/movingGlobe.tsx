@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import dynamic from "next/dynamic";
+import ColourfulText from "@/components/ui/colourful-text";
 
 const World = dynamic(
 	() => import("@/components/ui/globe").then((m) => m.World),
@@ -415,7 +416,7 @@ export function MovingGlobe() {
 					className="div"
 				>
 					<h2 className="text-center text-3xl md:text-5xl font-bold text-black dark:text-white">
-						FindIt
+						<ColourfulText text="FindIt" />
 					</h2>
 					<p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto">
 						Domain reconnaissance tool designed to gather extensive

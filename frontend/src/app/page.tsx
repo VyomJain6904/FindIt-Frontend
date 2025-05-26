@@ -3,7 +3,7 @@ import { SearchDomainBox } from "@/components/searchBox";
 
 export default function Home() {
 	return (
-		<div className="bg-black p-0 pt-2">
+		<div className="bg-black">
 			<MovingGlobe />
 			<SearchDomainBox />
 		</div>

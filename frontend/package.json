@@ -9,8 +9,10 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@radix-ui/react-label": "^2.1.7",
 		"@react-three/drei": "^10.0.6",
 		"@react-three/fiber": "^9.0.0",
+		"@tabler/icons-react": "^3.33.0",
 		"clsx": "^2.1.1",
 		"motion": "^12.12.2",
 		"next": "15.3.2",

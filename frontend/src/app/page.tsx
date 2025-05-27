@@ -2,6 +2,7 @@ import { LoginButton } from "@/components/loginButton";
 import { MovingGlobe } from "@/components/movingGlobe";
 import { SearchDomainBox } from "@/components/searchBox";
 import { GridBackground } from "@/components/ui/gridBackground";
+import { Tooltip } from "@/components/toolTip";
 
 export default function Home() {
 	return (
@@ -11,6 +12,7 @@ export default function Home() {
 				<MovingGlobe />
 				<SearchDomainBox />
 				<GridBackground />
+				<Tooltip />
 			</div>
 		</div>
 	);

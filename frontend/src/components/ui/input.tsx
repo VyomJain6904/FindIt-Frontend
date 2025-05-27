@@ -1,7 +1,9 @@
 "use client";
+
 import AnimatedPlaceholderText from "@/components/AnimatedPlaceholderText";
-import React from "react";
 import { cn } from "@/lib/utils";
+
+import React from "react";
 import { motion, useMotionTemplate, useMotionValue } from "motion/react";
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
 	useAnimatedPlaceholder?: boolean;

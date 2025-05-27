@@ -1,7 +1,9 @@
 "use client";
+
 import React from "react";
 import { motion } from "motion/react";
 import dynamic from "next/dynamic";
+
 import ColourfulText from "@/components/ui/colourful-text";
 
 const World = dynamic(

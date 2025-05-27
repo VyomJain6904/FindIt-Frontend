@@ -1,4 +1,3 @@
-// components/ui/AnimatedPlaceholderText.tsx
 "use client";
 
 import React from "react";

@@ -1,4 +1,4 @@
-import { DashboardSideBar } from "@/components/dashboardUI/dashboardSideBar";
+import { DashboardSideBar } from "@/components/dashboardPageUI/dashboardSideBar";
 
 export default function Home() {
 	return (

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { Button } from "@/components/dashboardUI/moving-border";
+import { Button } from "@/components/dashboardPageUI/moving-border";
 
 export function SearchButtonDashboard() {
 	return (

@@ -14,7 +14,7 @@
 		"@react-three/fiber": "^9.0.0",
 		"@tabler/icons-react": "^3.33.0",
 		"clsx": "^2.1.1",
-		"motion": "^12.14.0",
+		"motion": "^12.15.0",
 		"next": "15.3.2",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",

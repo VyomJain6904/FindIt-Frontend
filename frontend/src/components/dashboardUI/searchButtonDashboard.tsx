@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { Button } from "@/components/findit/moving-border";
+import { Button } from "@/components/dashboardUI/moving-border";
 
 export function SearchButtonDashboard() {
 	return (
-		<div className="h-full w-full flex items-center justify-center">
+		<div className="w-full flex items-center justify-center ">
 			<Link href="/dashboard/search">
 				<Button
 					onClick={() => console.log("Search button clicked")}

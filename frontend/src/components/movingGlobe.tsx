@@ -5,6 +5,8 @@ import { motion } from "motion/react";
 import dynamic from "next/dynamic";
 
 import ColourfulText from "@/components/ui/colourful-text";
+import Link from "next/link";
+import { Button } from "./ui/moving-border";
 
 const World = dynamic(
 	() => import("@/components/ui/globe").then((m) => m.World),

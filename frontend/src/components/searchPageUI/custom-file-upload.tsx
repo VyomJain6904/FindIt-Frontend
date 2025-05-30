@@ -1,5 +1,7 @@
 "use client";
+
 import React, { useState } from "react";
+
 import { FileUpload } from "@/components/ui/file-upload";
 
 export function CustomFileUpload() {
@@ -10,7 +12,7 @@ export function CustomFileUpload() {
 	};
 
 	return (
-		<div className="w-full max-w-4xl mx-auto min-h-96 bg-black rounded-lg">
+		<div className="w-full max-w-4xl mx-auto h-full bg-black rounded-lg">
 			<FileUpload onChange={handleFileUpload} />
 		</div>
 	);

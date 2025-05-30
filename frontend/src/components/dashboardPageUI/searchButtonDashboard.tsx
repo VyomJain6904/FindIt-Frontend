@@ -5,7 +5,7 @@ import { Button } from "@/components/dashboardPageUI/moving-border";
 
 export function SearchButtonDashboard() {
 	return (
-		<div className="w-full flex items-center justify-center ">
+		<div className="w-full flex items-center justify-center mt-10">
 			<Link href="/dashboard/search">
 				<Button
 					onClick={() => console.log("Search button clicked")}

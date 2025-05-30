@@ -28,7 +28,7 @@ export default function AnimatedPlaceholderText() {
 
 	return (
 		<span
-			className={`pointer-events-none absolute left-3 top-0.5 text-lg text-neutral-400 dark:text-neutral-600 transition-opacity duration-300 ${
+			className={`pointer-events-none absolute left-3 top-0.5 text-lg text-neutral-600 transition-opacity duration-300 ${
 				visible ? "opacity-100" : "opacity-0"
 			}`}
 		>

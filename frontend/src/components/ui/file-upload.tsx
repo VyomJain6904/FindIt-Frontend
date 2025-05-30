@@ -166,7 +166,7 @@ export const FileUpload = ({
 												initial={{ opacity: 0 }}
 												animate={{ opacity: 1 }}
 												layout
-												className="rounded-lg px-2 py-1 w-fit shrink-0 text-sm text-neutral-600 dark:bg-neutral-800 dark:text-white shadow-input"
+												className="rounded-lg px-2 py-1 w-fit shrink-0 text-sm bg-neutral-800 text-white shadow-input"
 											>
 												{(
 													file.size /
@@ -186,12 +186,12 @@ export const FileUpload = ({
 										</div>
 									</div>
 
-									<div className="flex text-sm md:flex-row flex-col items-start md:items-center w-full mt-2 justify-between text-neutral-600 dark:text-neutral-400">
+									<div className="flex text-sm md:flex-row flex-col items-start md:items-center w-full mt-2 justify-between text-neutral-400">
 										<motion.p
 											initial={{ opacity: 0 }}
 											animate={{ opacity: 1 }}
 											layout
-											className="px-1 py-0.5 rounded-md bg-gray-100 dark:bg-neutral-800 "
+											className="px-1 py-0.5 rounded-md bg-neutral-800 "
 										>
 											{file.type || "text/plain"}
 										</motion.p>
@@ -266,7 +266,7 @@ export function GridPattern() {
 							className={`w-6 h-6 flex shrink-0 rounded-[2px] ${
 								index % 2 === 0
 									? "bg-neutral-950"
-									: "bg-neutral-950 shadow-[0px_0px_1px_3px_rgba(255,255,255,1)_inset] dark:shadow-[0px_0px_1px_3px_rgba(0,0,0,1)_inset]"
+									: "bg-neutral-950 shadow-[0px_0px_1px_3px_rgba(0,0,0,1)_inset]"
 							}`}
 						/>
 					);

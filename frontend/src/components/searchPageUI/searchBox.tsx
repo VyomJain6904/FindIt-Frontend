@@ -12,9 +12,9 @@ export function SearchDomainBox() {
 		console.log("Form submitted");
 	};
 	return (
-		<div className="shadow-input mx-auto w-full max-w-md rounded-xl bg-white p-2 md:rounded-2xl dark:bg-black">
+		<div className="shadow-input mx-auto w-full max-w-md rounded-xl p-2 md:rounded-2xl bg-black">
 			<form className="my-4" onSubmit={handleSubmit}>
-				<LabelInputContainer className="mb-4 text-xl text-black dark:text-white">
+				<LabelInputContainer className="mb-4 text-xl text-white">
 					<Label htmlFor="domain" className="text-center text-xl">
 						Search Domain
 					</Label>

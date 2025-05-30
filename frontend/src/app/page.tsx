@@ -6,7 +6,7 @@ import { Tooltip } from "@/components/toolTip";
 
 export default function Home() {
 	return (
-		<div className="relative min-h-screen">
+		<div className="relative min-h-screen bg-black">
 			<LoginButton />
 			<div className="flex flex-col items-center justify-center min-h-screen space-y-8 px-4">
 				<MovingGlobe />

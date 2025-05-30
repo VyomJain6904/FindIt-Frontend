@@ -8,6 +8,7 @@ import { SearchButton } from "@/components/searchPageUI/searchButton";
 import ColourfulText from "@/components/ui/colourful-text";
 import { SearchDomainBox } from "@/components/searchPageUI/searchBox";
 import { cn } from "@/lib/utils";
+import { CustomFileUpload } from "@/components/searchPageUI/custom-file-upload";
 
 import {
 	IconArrowLeft,
@@ -119,10 +120,10 @@ export const LogoIcon = () => {
 
 const Dashboard = () => {
 	return (
-		<div className="items-center justify-center h-full w-full">
-			<div className="flex flex-row items-center justify-center py-10 h-screen md:h-auto dark:bg-black bg-white relative w-full">
+		<div className="items-center justify-center h-full w-full ">
+			<div className="flex flex-row items-center justify-center py-10 h-screen md:h-auto bg-black relative w-full">
 				<div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
-					<h2 className="text-center text-3xl md:text-5xl font-bold text-black dark:text-white">
+					<h2 className="text-center text-3xl md:text-5xl font-bold text-white">
 						<ColourfulText text="FindIt" />
 					</h2>
 					<p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto">
@@ -132,6 +133,7 @@ const Dashboard = () => {
 					<div className="mt-5">
 						<SearchDomainBox />
 						<SearchButton />
+						<CustomFileUpload />
 					</div>
 				</div>
 			</div>

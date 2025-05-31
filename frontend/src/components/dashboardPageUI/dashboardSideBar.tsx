@@ -6,8 +6,8 @@ import { motion } from "motion/react";
 import { Sidebar, SidebarBody, SidebarLink } from "@/components/ui/sidebar";
 import { SearchButtonDashboard } from "@/components/dashboardPageUI/searchButtonDashboard";
 import { MovingGlobe } from "@/components/movingGlobe";
+import CustomSpotlightCard from "@/components/spotLightCard";
 import { Tooltip } from "@/components/toolTip";
-import { GridBackground } from "@/components/dashboardPageUI/gridBackground";
 import { cn } from "@/lib/utils";
 import {
 	IconArrowLeft,
@@ -119,10 +119,10 @@ export const LogoIcon = () => {
 
 const Dashboard = () => {
 	return (
-		<div className="items-center justify-center h-full w-full">
+		<div className="flex flex-col items-center justify-center min-h-full w-full space-y-8 px-4 ">
 			<MovingGlobe />
 			<SearchButtonDashboard />
-			<GridBackground />
+			<CustomSpotlightCard />
 			<Tooltip />
 		</div>
 	);

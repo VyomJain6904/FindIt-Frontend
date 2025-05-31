@@ -7,7 +7,7 @@ import { Sidebar, SidebarBody, SidebarLink } from "@/components/ui/sidebar";
 import { SearchButtonDashboard } from "@/components/dashboardPageUI/searchButtonDashboard";
 import { MovingGlobe } from "@/components/movingGlobe";
 import { Tooltip } from "@/components/toolTip";
-import { GridBackground } from "@/components/ui/gridBackground";
+import { GridBackground } from "@/components/dashboardPageUI/gridBackground";
 import { cn } from "@/lib/utils";
 import {
 	IconArrowLeft,

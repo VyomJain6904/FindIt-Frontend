@@ -4,7 +4,7 @@ import { MovingCards } from "@/components/movingCards";
 
 export function GridBackground() {
 	return (
-		<div className="relative flex h-full w-full items-center justify-center bg-black mt-20">
+		<div className="relative flex h-full w-full items-center justify-center bg-black mt-55">
 			<div
 				className={cn(
 					"absolute inset-0",

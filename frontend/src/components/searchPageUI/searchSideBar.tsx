@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 import { Sidebar, SidebarBody, SidebarLink } from "@/components/ui/sidebar";
 import { SearchButton } from "@/components/searchPageUI/searchButton";
@@ -18,8 +19,16 @@ import {
 	IconFolderSearch,
 } from "@tabler/icons-react";
 
+type SidebarLinkType = {
+	label: string;
+	href: string;
+	icon: React.ReactNode;
+};
+
 export function SearchSideBar() {
-	const links = [
+	const [open, setOpen] = useState(false);
+
+	const links: SidebarLinkType[] = [
 		{
 			label: "Dashboard",
 			href: "/dashboard",
@@ -47,7 +56,7 @@ export function SearchSideBar() {
 			),
 		},
 	];
-	const [open, setOpen] = useState(false);
+
 	return (
 		<div
 			className={cn(
@@ -71,13 +80,12 @@ export function SearchSideBar() {
 								label: "Vyom Jain",
 								href: "#",
 								icon: (
-									<img
-										// TODO: This is a placeholder image, replace with your own avatar
+									<Image
 										src="/me.jpg"
 										className="h-7 w-7 shrink-0 rounded-full"
-										width={50}
-										height={50}
-										alt="Avatar"
+										width={28}
+										height={28}
+										alt="Vyom Jain"
 									/>
 								),
 							}}
@@ -89,6 +97,7 @@ export function SearchSideBar() {
 		</div>
 	);
 }
+
 export const Logo = () => {
 	return (
 		<a
@@ -106,6 +115,7 @@ export const Logo = () => {
 		</a>
 	);
 };
+
 export const LogoIcon = () => {
 	return (
 		<a
@@ -132,8 +142,8 @@ const Dashboard = () => {
 					<div className="mt-5 h-full w-full bg-black">
 						<SearchDomainBox />
 						<SearchButton />
-						<div className="mt-30 flex flex-col md:flex-row gap-6 items-center justify-center pl-40">
-							<div className="flex-1 mt-5">
+						<div className="mt-20 flex flex-col md:flex-row gap-6 items-center justify-center pl-40">
+							<div className="flex-1">
 								<CustomCheckboxList />
 							</div>
 							<div className="flex-1">

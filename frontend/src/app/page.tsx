@@ -4,6 +4,7 @@ import { SearchDomainBox } from "@/components/searchBox";
 import { GridBackground } from "@/components/ui/gridBackground";
 import { Tooltip } from "@/components/toolTip";
 import CustomSpotlightCard from "@/components/spotLightCard";
+import TechCircle from "@/components/techCircle";
 
 export default function Home() {
 	return (
@@ -14,6 +15,7 @@ export default function Home() {
 				<SearchDomainBox />
 				<CustomSpotlightCard />
 				<GridBackground />
+				<TechCircle />
 				<Tooltip />
 			</div>
 		</div>

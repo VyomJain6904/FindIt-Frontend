@@ -15,6 +15,21 @@
 	--shadow-input: 0px 2px 3px -1px rgba(0, 0, 0, 0.1),
 		0px 1px 0px 0px rgba(25, 28, 33, 0.02),
 		0px 0px 0px 1px rgba(25, 28, 33, 0.08);
+
+	--animate-orbit: orbit calc(var(--duration) * 1s) linear infinite;
+}
+
+@keyframes orbit {
+	0% {
+		transform: rotate(calc(var(--angle) * 1deg))
+			translateY(calc(var(--radius) * 1px))
+			rotate(calc(var(--angle) * -1deg));
+	}
+	100% {
+		transform: rotate(calc(var(--angle) * 1deg + 360deg))
+			translateY(calc(var(--radius) * 1px))
+			rotate(calc((var(--angle) * -1deg) - 360deg));
+	}
 }
 
 :root {

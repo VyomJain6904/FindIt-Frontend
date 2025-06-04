@@ -8,6 +8,7 @@ import {
 	useMotionValue,
 	useTransform,
 } from "motion/react";
+
 import { useRef } from "react";
 
 import { cn } from "@/lib/utils";
@@ -34,7 +35,7 @@ export function Button({
 	return (
 		<Component
 			className={cn(
-				"relative h-12 w-30 overflow-hidden bg-transparent p-[1px] text-xl cursor-pointer",
+				"relative h-10 w-18 overflow-hidden bg-transparent p-[1px] text-xl cursor-pointer",
 				containerClassName,
 			)}
 			style={{
@@ -172,17 +173,17 @@ export const MovingBorder = ({
 
 		// Create path that traces exactly along the border
 		return `
-			M ${cornerRadiusX} 0
-			L ${width - cornerRadiusX} 0
-			Q ${width} 0 ${width} ${cornerRadiusY}
-			L ${width} ${height - cornerRadiusY}
-			Q ${width} ${height} ${width - cornerRadiusX} ${height}
-			L ${cornerRadiusX} ${height}
-			Q 0 ${height} 0 ${height - cornerRadiusY}
-			L 0 ${cornerRadiusY}
-			Q 0 0 ${cornerRadiusX} 0
-			Z
-		`
+            M ${cornerRadiusX} 0
+            L ${width - cornerRadiusX} 0
+            Q ${width} 0 ${width} ${cornerRadiusY}
+            L ${width} ${height - cornerRadiusY}
+            Q ${width} ${height} ${width - cornerRadiusX} ${height}
+            L ${cornerRadiusX} ${height}
+            Q 0 ${height} 0 ${height - cornerRadiusY}
+            L 0 ${cornerRadiusY}
+            Q 0 0 ${cornerRadiusX} 0
+            Z
+        `
 			.replace(/\s+/g, " ")
 			.trim();
 	};

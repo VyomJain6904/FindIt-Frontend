@@ -5,30 +5,23 @@ import { motion } from "motion/react";
 
 import { Sidebar, SidebarBody, SidebarLink } from "@/components/ui/sidebar";
 import ColourfulText from "@/components/ui/colourful-text";
+import { DataTable } from "@/components/resultPageUI/data-table";
+import { domainData } from "@/data/data";
+import { Domaincol } from "@/components/resultPageUI/columns";
+import { IconArrowLeft, IconBrandTabler, IconHistory, IconFolderSearch } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
-
-import {
-	IconArrowLeft,
-	IconBrandTabler,
-	IconHistory,
-	IconFolderSearch,
-} from "@tabler/icons-react";
 
 export function ResultSideBar() {
 	const links = [
 		{
 			label: "Dashboard",
 			href: "/dashboard",
-			icon: (
-				<IconBrandTabler className="h-5 w-5 shrink-0 text-neutral-200" />
-			),
+			icon: <IconBrandTabler className="h-5 w-5 shrink-0 text-neutral-200" />,
 		},
 		{
 			label: "Search",
 			href: "/dashboard/search",
-			icon: (
-				<IconFolderSearch className="h-5 w-5 shrink-0 text-neutral-200" />
-			),
+			icon: <IconFolderSearch className="h-5 w-5 shrink-0 text-neutral-200" />,
 		},
 		{
 			label: "Scan History",
@@ -38,9 +31,7 @@ export function ResultSideBar() {
 		{
 			label: "Logout",
 			href: "/logout",
-			icon: (
-				<IconArrowLeft className="h-5 w-5 shrink-0 text-neutral-200" />
-			),
+			icon: <IconArrowLeft className="h-5 w-5 shrink-0 text-neutral-200" />,
 		},
 	];
 	const [open, setOpen] = useState(false);
@@ -85,6 +76,7 @@ export function ResultSideBar() {
 		</div>
 	);
 }
+
 export const Logo = () => {
 	return (
 		<a
@@ -102,6 +94,7 @@ export const Logo = () => {
 		</a>
 	);
 };
+
 export const LogoIcon = () => {
 	return (
 		<a
@@ -122,9 +115,12 @@ const Dashboard = () => {
 						<ColourfulText text="FindIt" />
 					</h2>
 					<p className="text-center text-base md:text-lg font-normal text-neutral-200 max-w-md mt-2 mx-auto">
-						Domain reconnaissance tool designed to gather extensive
-						information about a target domain.
+						Domain reconnaissance tool designed to gather extensive information about a
+						target domain.
 					</p>
+					<div className="mt-5">
+						<DataTable columns={Domaincol} data={domainData} />
+					</div>
 				</div>
 			</div>
 		</div>
